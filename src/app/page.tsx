@@ -4,7 +4,7 @@
 import { MapPin } from "lucide-react";
 import { PiInstagramLogo, PiTiktokLogo, PiGithubLogo, PiLinkedinLogo, PiShare, PiCode, PiMagnifyingGlass, PiLightning, PiChartBar, PiCoffee, PiListBullets } from "react-icons/pi";
 import Image from "next/image";
-import { FaCode, FaSearch, FaBolt, FaChartBar, FaLink, FaPhone, FaNodeJs } from "react-icons/fa";
+import { FaPhone, FaNodeJs } from "react-icons/fa";
 import { SiNextdotjs, SiMercadopago } from "react-icons/si";
 import { motion } from "framer-motion";
 
