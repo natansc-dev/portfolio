@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@500;700;900&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --main-dark: #2C415C;
+  --neu-dark: #22304A;
+  --neu-light: #34496a;
+  --accent: #E95D1F;
+  --neu-shadow-dark: 8px 8px 24px #1a2533;
+  --neu-shadow-light: -8px -8px 24px #32476a;
+  --neu-shadow-inset-dark: inset 2px 2px 8px #1a2533;
+  --neu-shadow-inset-light: inset -2px -2px 8px #32476a;
+  --neu-gradient: linear-gradient(135deg, #22304A 0%, #2C415C 100%);
+  --neu-gradient-accent: linear-gradient(135deg, #E95D1F 0%, #e07a1a 100%);
+  --shadow-light: rgba(255,255,255,0.05);
+  --shadow-dark: rgba(0,0,0,0.2)
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--main-dark);
+  color: #fff;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.raised { 
+  box-shadow: -10px -10px 20px 0px  var(--shadow-light), 10px 10px 20px 0px var(--shadow-dark)
+}
+
+.neu-card {
+  background: lighten(var(--main-dark), 2%);
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.neu-card-accent {
+  background: var(--neu-gradient-accent);
+  color: #fff;
+  box-shadow: 0 4px 24px #e95d1f55, 0 1.5px 8px #1a253355;
+}
+
+.neu-btn {
+  padding: 1.2em 3em;
+  background: var(--neu-gradient);
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: var(--neu-shadow-dark), var(--neu-shadow-light);
+}
+
+.neu-btn:hover {
+  background: var(--neu-gradient-accent);
+  color: #fff;
+  box-shadow: 0 2px 8px #e95d1f55, 0 1.5px 8px #1a253355;
+}
+
+.neu-btn:active {
+  box-shadow: var(--neu-shadow-inset-dark), var(--neu-shadow-inset-light);
+  background: var(--neu-gradient-accent);
+}
+
+body, p, li, span, button, input, textarea {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .title {
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
